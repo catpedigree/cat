@@ -1,3 +1,582 @@
-<html>
-<body>tet febri</body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Cats Wooo</title>
+<meta name="description" content="Pedigrees are important to view your cat's lines, so you can see, for example, whether names are more common and whether there are new names that could be a nice addition to your breeding program.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="revisit-after" content="365 days">
+<meta name="generator" content="Adobe">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="fontawesome6.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&700,400&display=swap" rel="stylesheet">
+<link href="website.css" rel="stylesheet">
+<link href="index.css" rel="stylesheet">
+<script src="jquery-3.7.1.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   if ($(window).width() >= 600)
+   {
+      $('#wb_servicesCard1').addClass('visibility-hidden');
+      $('#wb_Card1').addClass('visibility-hidden');
+      $('#wb_Card2').addClass('visibility-hidden');
+      $('#wb_Card3').addClass('visibility-hidden');
+      $('#wb_Card4').addClass('visibility-hidden');
+      $('#wb_Card5').addClass('visibility-hidden');
+      $('#wb_Card6').addClass('visibility-hidden');
+      $('#wb_Image1').addClass('visibility-hidden');
+      $('#wb_Image2').addClass('visibility-hidden');
+      $('#wb_Image3').addClass('visibility-hidden');
+   }
+   $("a[href*='#homeLayoutGrid']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#homeLayoutGrid').offset().top-60 }, 600, 'easeOutCubic');
+   });
+   function onScrollservicesCard1()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_servicesCard1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_servicesCard1', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_servicesCard1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_servicesCard1').inViewPort(true))
+   {
+      $('#wb_servicesCard1').addClass("in-viewport");
+   }
+   onScrollservicesCard1();
+   $(window).scroll(function(event)
+   {
+      onScrollservicesCard1();
+   });
+   function onScrollCard1()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Card1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card1', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card1').inViewPort(true))
+   {
+      $('#wb_Card1').addClass("in-viewport");
+   }
+   onScrollCard1();
+   $(window).scroll(function(event)
+   {
+      onScrollCard1();
+   });
+   function onScrollCard2()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Card2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card2', 'slide-up-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card2').inViewPort(true))
+   {
+      $('#wb_Card2').addClass("in-viewport");
+   }
+   onScrollCard2();
+   $(window).scroll(function(event)
+   {
+      onScrollCard2();
+   });
+   function onScrollCard3()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Card3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card3', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card3').inViewPort(true))
+   {
+      $('#wb_Card3').addClass("in-viewport");
+   }
+   onScrollCard3();
+   $(window).scroll(function(event)
+   {
+      onScrollCard3();
+   });
+   function onScrollCard4()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Card4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card4', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card4', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card4').inViewPort(true))
+   {
+      $('#wb_Card4').addClass("in-viewport");
+   }
+   onScrollCard4();
+   $(window).scroll(function(event)
+   {
+      onScrollCard4();
+   });
+   function onScrollCard5()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Card5");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card5', 'slide-left-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card5', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card5').inViewPort(true))
+   {
+      $('#wb_Card5').addClass("in-viewport");
+   }
+   onScrollCard5();
+   $(window).scroll(function(event)
+   {
+      onScrollCard5();
+   });
+   function onScrollCard6()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Card6");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Card6', 'slide-right-in', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Card6', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Card6').inViewPort(true))
+   {
+      $('#wb_Card6').addClass("in-viewport");
+   }
+   onScrollCard6();
+   $(window).scroll(function(event)
+   {
+      onScrollCard6();
+   });
+   function onScrollImage1()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Image1");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image1', 'jello-horizontal', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image1', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image1').inViewPort(true))
+   {
+      $('#wb_Image1').addClass("in-viewport");
+   }
+   onScrollImage1();
+   $(window).scroll(function(event)
+   {
+      onScrollImage1();
+   });
+   function onScrollImage2()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Image2");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image2', 'animate-fade-in-down', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image2', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image2').inViewPort(true))
+   {
+      $('#wb_Image2').addClass("in-viewport");
+   }
+   onScrollImage2();
+   $(window).scroll(function(event)
+   {
+      onScrollImage2();
+   });
+   function onScrollImage3()
+   {
+      if ($(window).width() < 600)
+         return;
+      var $obj = $("#wb_Image3");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Image3', 'animate-fade-in-up', 0, 1250);
+      }
+      else
+      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
+      {
+         $obj.removeClass("in-viewport");
+         AnimateCss('wb_Image3', 'animate-fade-out', 0, 0);
+      }
+   }
+   if (!$('#wb_Image3').inViewPort(true))
+   {
+      $('#wb_Image3').addClass("in-viewport");
+   }
+   onScrollImage3();
+   $(window).scroll(function(event)
+   {
+      onScrollImage3();
+   });
+});
+</script>
+</head>
+<body class="wb-theme-content">
+<div id="wb_navigationLayoutGrid" class="wb-theme-content">
+<div id="navigationLayoutGrid">
+<div class="col-1">
+<div id="wb_navigationHeading" style="display:block;width:100%;z-index:0;">
+<h1 id="navigationHeading" class="wb-theme-header">Cats Mooo</h1>
+</div>
+<div id="wb_Image2" style="display:block;width:100%;height:auto;z-index:1;">
+<img src="images/Logo-cat.png" id="Image2" alt="" width="938" height="1077">
+</div>
+<div id="wb_Image3" style="display:block;width:100%;height:auto;z-index:2;">
+<img src="images/Logo-teks.png" id="Image3" alt="" width="938" height="216">
+</div>
+<div id="wb_navigationMenu" style="display:block;width:100%;z-index:3;" itemscope="itemscope" itemtype="https://schema.org/SiteNavigationElement">
+<span class="wb-theme-content" itemprop="name"><a href="#homeLayoutGrid" title="Home" itemprop="url">Home</a></span><span class="wb-theme-content" itemprop="name"><a href="#aboutLayoutGrid1" title="About" itemprop="url">About</a></span><span class="wb-theme-content" itemprop="name"><a href="#catLayoutGrid1" title="Cats" itemprop="url">Cats</a></span><span class="wb-theme-content" itemprop="name"><a href="#LayoutGrid5" title="Services" itemprop="url">Services</a></span>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_homeLayoutGrid">
+<div id="homeLayoutGrid-overlay"></div>
+<div id="homeLayoutGrid">
+<div id="wb_homeHeading" style="display:block;z-index:4;">
+<h2 id="homeHeading">Pedigree Information</h2>
+</div>
+<div id="wb_homeText">
+<span style="color:#FFFFFF;">Pedigrees are important to view your cat's lines, so you can see, for example, whether names are more common and whether there are new names that could be a nice addition to your breeding program.<br></span>
+</div>
+</div>
+</div>
+<div id="wb_dividerLayoutGrid">
+<div id="dividerLayoutGrid-overlay"></div>
+<section id="dividerLayoutGrid">
+<div class="row">
+<div class="col-1">
+<div id="wb_dividerHeading1" style="display:block;width:100%;z-index:6;">
+<h1 id="dividerHeading1">About</h1>
+</div>
+<div id="wb_dividerHeading2" style="display:block;width:100%;z-index:7;">
+<h2 id="dividerHeading2">Get to Know Us Better</h2>
+</div>
+</div>
+</div>
+</section>
+<div id="dividerLayoutGrid-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,100L50,50L100,100L100,0L50,50L0,0L0,100Z" style="fill-opacity:0.5;"/>
+<path class="divider-fill" d="M0,100L100,100L50,50L0,100Z"/>
+</svg></div>
+</div>
+<div id="wb_aboutLayoutGrid1" class="wb-theme-content">
+<div id="aboutLayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_aboutHeading1" style="display:block;width:100%;z-index:8;">
+<h2 id="aboutHeading1" class="wb-theme-header">Who We Are</h2>
+</div>
+<div id="wb_aboutText1" class="wb-theme-content">
+<p>The Governing Council of the Cat Fancy and Cat Wooo is an Introducer Appointed Representative of Agria Pet Insurance Ltd who administer the insurance and is authorised and regulated by the Financial Conduct Authority, Financial Services Register Number 496160. Agria Pet Insurance is registered and incorporated in England and Wales with registered number 04258783. Registered office: First Floor, Blue Leanie, Walton Street, Aylesbury, Buckinghamshire, HP21 7QW. Agria insurance policies are underwritten by Agria Försäkring who is authorised and regulated by the Prudential Regulation Authority and Financial Conduct Authority.</p>
+<br>
+</div>
+<div id="wb_Image1" style="display:block;width:100%;height:auto;z-index:10;">
+<img src="images/World_Cat_Federation_logo.png" id="Image1" alt="" width="938" height="991">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3-overlay"></div>
+<section id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading5" style="display:block;width:100%;z-index:11;">
+<h1 id="Heading5">Cat</h1>
+</div>
+<div id="wb_Heading6" style="display:block;width:100%;z-index:12;">
+<h2 id="Heading6">Cat breeds are significant, not only because of the diverse beauty of each breed, but also because their behaviour and health can be more predictable. This makes it easier for cat parents to choose a breed that suits their home and lifestyle, and be better prepared in case of any common health issues.</h2>
+</div>
+<a id="Button1" href="https://www.whiskas.co.uk/cat-breeds" rel="nofollow" class="wb-theme-button" style="display:inline-block;width:89px;height:23px;z-index:13;">A-Z Cats</a>
+</div>
+</div>
+</section>
+<div id="LayoutGrid3-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,100L50,50L100,100L100,0L50,50L0,0L0,100Z" style="fill-opacity:0.5;"/>
+<path class="divider-fill" d="M0,100L100,100L50,50L0,100Z"/>
+</svg></div>
+</div>
+<div id="wb_catLayoutGrid1" class="wb-theme-content">
+<div id="catLayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card5" style="display:flex;width:100%;z-index:14;" class="card wb-theme-content">
+<div id="Card5-card-body">
+<img id="Card5-card-item0" src="British Shorthair_0.jpeg" class="wb-theme-content" width="640" height="640" alt="" title="">
+<div id="Card5-card-item1" class="wb-theme-header"><h1>British Shorthair</h1></div>
+<div id="Card5-card-item2" class="wb-theme-header"><h1>Characteristics: Demanding, Independent<br>Size:Large<br>Fur type:Short-haired<br>Shedding:High</h1></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_servicesCard1" style="display:flex;width:100%;z-index:15;" class="card wb-theme-content">
+<div id="servicesCard1-card-body">
+<img id="servicesCard1-card-item0" src="Siamese_0.jpeg" width="640" height="640" alt="" title="">
+<div id="servicesCard1-card-item1" class="wb-theme-header"><h1>Siamese</h1></div>
+<div id="servicesCard1-card-item2" class="wb-theme-header"><h1>Characteristics: Outgoing, Very Vocal<br>Size:Medium<br>Fur type:Short-haired<br>Shedding:Moderate</h1></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card4" style="display:flex;width:100%;z-index:16;" class="card wb-theme-content">
+<div id="Card4-card-body">
+<img id="Card4-card-item0" src="Maine.jpeg" class="wb-theme-content" width="640" height="640" alt="" title="">
+<div id="Card4-card-item1" class="wb-theme-header"><h1>Maine Coon</h1></div>
+<div id="Card4-card-item2" class="wb-theme-header"><h1>Characteristics: Cuddly, Outgoing<br>Size:Large<br>Fur type:Long-haired<br>Shedding:Moderate</h1></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-4">
+<div class="col-4-padding">
+<div id="wb_Card6" style="display:flex;width:100%;z-index:17;" class="card wb-theme-content">
+<div id="Card6-card-body">
+<img id="Card6-card-item0" src="Ragdoll_0.jpeg" class="wb-theme-content" width="640" height="640" alt="" title="">
+<div id="Card6-card-item1" class="wb-theme-header"><h1>Ragdoll</h1></div>
+<div id="Card6-card-item2" class="wb-theme-header"><h1>Characteristics: Cuddly, Submissive<br>Size:Large<br>Fur type:Semi-longhaired<br>Shedding:Moderate</h1></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="Layer1" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:46px;height:46px;z-index:56;">
+<div id="wb_Icon1" style="position:absolute;left:9px;top:9px;width:28px;height:28px;text-align:center;z-index:30;">
+<a href="#"><div id="Icon1"><i class="fa fa-arrow-up"></i></div></a></div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4-overlay"></div>
+<section id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div id="wb_Heading7" style="display:block;width:100%;z-index:31;">
+<h1 id="Heading7">Discovering the ideal cat</h1>
+</div>
+<div id="wb_Heading8" style="display:block;width:100%;z-index:32;">
+<h2 id="Heading8">It’s crucial to choose the ideal cat breed for your needs, as the decision affects both you and your new feline friend.<br><br></h2>
+</div>
+</div>
+</div>
+</section>
+<div id="LayoutGrid4-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,100L50,50L100,100L100,0L50,50L0,0L0,100Z" style="fill-opacity:0.5;"/>
+<path class="divider-fill" d="M0,100L100,100L50,50L0,100Z"/>
+</svg></div>
+</div>
+<div id="wb_LayoutGrid5" class="wb-theme-content">
+<div id="LayoutGrid5">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card1" style="display:flex;width:100%;z-index:33;" class="card wb-theme-content">
+<div id="Card1-card-body">
+<div id="Card1-card-item0" class="wb-theme-header"><h1>Temperament</h1></div>
+<div id="Card1-card-item1" class="wb-theme-header"><h1>Oftentimes, owners will want to match their cat’s personality for a harmonious relationship. Some cat breeds are more independent, your cat’s personality will determine whether they are comfortable being alone for short periods of time, or if they will follow you around the house for attention.</h1></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card2" style="display:flex;width:100%;z-index:34;" class="card wb-theme-content">
+<div id="Card2-card-body">
+<div id="Card2-card-item0" class="wb-theme-header"><h1>Cat’s Size</h1></div>
+<div id="Card2-card-item1" class="wb-theme-header"><h1>The size of your cat is important to consider in terms of your living environment. Some cat breeds are larger, like Maine Coons and Ragdolls, need more space to play, and therefore would be ideal for larger homes. However, smaller cat breeds may be suitable for smaller homes or even apartments.</h1></div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-3">
+<div class="col-3-padding">
+<div id="wb_Card3" style="display:flex;width:100%;z-index:35;" class="card wb-theme-content">
+<div id="Card3-card-body">
+<div id="Card3-card-item0" class="wb-theme-header"><h1>Activity Levels</h1></div>
+<div id="Card3-card-item1" class="wb-theme-header"><h1>Each cat breed has different activity levels, and you’ll need to decide what you can manage. High-energy cats, will be much more active and will need time from you for interactive play. However, some cat breeds are more laid-back, and while play is important for mental and physical stimulation, they may be less demanding of your time.</h1></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footer">
+<div id="footer">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerTop">
+<div id="footerTop-divider-top">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<path class="divider-fill" d="M0,100L50,50L100,100L100,0L50,50L0,0L0,100Z" style="fill-opacity:0.5;"/>
+<path class="divider-fill" d="M0,100L100,100L50,50L0,100Z"/>
+</svg></div>
+<div id="footerTop">
+<div class="row">
+<div class="col-1">
+<div id="wb_footerCard1" style="display:flex;width:100%;z-index:36;" class="card">
+<div id="footerCard1-card-body">
+<div id="footerCard1-card-item0">Cats Mooo</div>
+<div id="footerCard1-card-item1">The place to be if you are looking for a pedigree cat. Here you can find your beautiful and unique breed with pedigrees all over the world!</div>
+<hr id="footerCard1-card-item2">
+<div id="footerCard1-card-item3">Email: cats@wooo.com<br>Telephone: 01278 427575</div>
+</div>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_footerCard2" style="display:flex;width:100%;z-index:37;" class="card">
+<div id="footerCard2-card-body">
+<div id="footerCard2-card-item0">Payment</div>
+<img id="footerCard2-card-item1" src="images/credit-card-4.png" width="352" height="117" alt="" title="">
+</div>
+</div>
+</div>
+<div class="col-3">
+<div id="wb_footerCard3" style="display:flex;width:100%;z-index:38;" class="card">
+<div id="footerCard3-card-body">
+<div id="footerCard3-card-item0">Member of</div>
+<a href="https://paag.org.uk/"><img id="footerCard3-card-item1" src="images/paag-logo.jpg" width="257" height="191" alt="" title=""></a>
+<a href="https://www.cfsg.org.uk/"><img id="footerCard3-card-item2" src="images/CFSG-logo.png" width="300" height="346" alt="" title=""></a>
+<a href="http://www.thecatgroup.org.uk/"><img id="footerCard3-card-item3" src="images/The-cat-group-logo.png" width="300" height="126" alt="" title=""></a>
+</div>
+</div>
+</div>
+<div class="col-4">
+<div id="wb_footerText1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:19px;"><strong>Follow us</strong></span>
+</div>
+<div id="wb_footerIcon1" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:40;">
+<a href="./index.html"><div id="footerIcon1"><i class="fa fa-brands fa-x-twitter"></i></div></a>
+</div>
+<div id="wb_footerIcon2" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:41;">
+<a href="./index.html"><div id="footerIcon2"><i class="fa fa-brands fa-instagram"></i></div></a>
+</div>
+<div id="wb_footerIcon3" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:42;">
+<a href="./index.html"><div id="footerIcon3"><i class="fa fa-brands fa-facebook"></i></div></a>
+</div>
+<hr id="footerLine" style="display:block;width: 100%;z-index:43;">
+<div id="wb_footerIcon4" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:44;">
+<a href="./index.html"><div id="footerIcon4"><i class="fa fa-brands fa-linkedin"></i></div></a>
+</div>
+<div id="wb_footerIcon5" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:45;">
+<a href="./index.html"><div id="footerIcon5"><i class="fa fa-brands fa-google"></i></div></a>
+</div>
+<div id="wb_footerIcon6" style="display:inline-block;width:16px;height:17px;text-align:center;z-index:46;">
+<a href="./index.html"><div id="footerIcon6"><i class="fa fa-brands fa-github"></i></div></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_footerBottom">
+<div id="footerBottom">
+<div class="col-1">
+<div id="wb_footerCopyright">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">© Copyright 2025 Cat Wooo The Governing Council of the Cat Fancy. <br>A Company Limited by Guarantee, Registration No. 07431259 Registered in England VAT Reg. No. 130 7379 79.</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
