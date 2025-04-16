@@ -20,19 +20,16 @@
 <script>
 $(document).ready(function()
 {
-   if ($(window).width() >= 600)
-   {
-      $('#wb_servicesCard1').addClass('visibility-hidden');
-      $('#wb_Card1').addClass('visibility-hidden');
-      $('#wb_Card2').addClass('visibility-hidden');
-      $('#wb_Card3').addClass('visibility-hidden');
-      $('#wb_Card4').addClass('visibility-hidden');
-      $('#wb_Card5').addClass('visibility-hidden');
-      $('#wb_Card6').addClass('visibility-hidden');
-      $('#wb_Image1').addClass('visibility-hidden');
-      $('#wb_Image2').addClass('visibility-hidden');
-      $('#wb_Image3').addClass('visibility-hidden');
-   }
+   $('#wb_servicesCard1').addClass('visibility-hidden');
+   $('#wb_Card1').addClass('visibility-hidden');
+   $('#wb_Card2').addClass('visibility-hidden');
+   $('#wb_Card3').addClass('visibility-hidden');
+   $('#wb_Card4').addClass('visibility-hidden');
+   $('#wb_Card5').addClass('visibility-hidden');
+   $('#wb_Card6').addClass('visibility-hidden');
+   $('#wb_Image1').addClass('visibility-hidden');
+   $('#wb_Image2').addClass('visibility-hidden');
+   $('#wb_Image3').addClass('visibility-hidden');
    $("a[href*='#homeLayoutGrid']").click(function(event)
    {
       event.preventDefault();
@@ -40,8 +37,6 @@ $(document).ready(function()
    });
    function onScrollservicesCard1()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_servicesCard1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -66,8 +61,6 @@ $(document).ready(function()
    });
    function onScrollCard1()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Card1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -92,8 +85,6 @@ $(document).ready(function()
    });
    function onScrollCard2()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Card2");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -118,8 +109,6 @@ $(document).ready(function()
    });
    function onScrollCard3()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Card3");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -144,8 +133,6 @@ $(document).ready(function()
    });
    function onScrollCard4()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Card4");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -170,8 +157,6 @@ $(document).ready(function()
    });
    function onScrollCard5()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Card5");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -196,8 +181,6 @@ $(document).ready(function()
    });
    function onScrollCard6()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Card6");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -222,8 +205,6 @@ $(document).ready(function()
    });
    function onScrollImage1()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Image1");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -248,8 +229,6 @@ $(document).ready(function()
    });
    function onScrollImage2()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Image2");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
@@ -274,8 +253,6 @@ $(document).ready(function()
    });
    function onScrollImage3()
    {
-      if ($(window).width() < 600)
-         return;
       var $obj = $("#wb_Image3");
       if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
       {
