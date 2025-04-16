@@ -25,8 +25,6 @@ $(document).ready(function()
 {
    $('#wb_Card4').addClass('visibility-hidden');
    $('#wb_Card6').addClass('visibility-hidden');
-   $('#wb_Image2').addClass('visibility-hidden');
-   $('#wb_Image3').addClass('visibility-hidden');
    function onScrollCard4()
    {
       var $obj = $("#wb_Card4");
@@ -74,54 +72,6 @@ $(document).ready(function()
    $(window).scroll(function(event)
    {
       onScrollCard6();
-   });
-   function onScrollImage2()
-   {
-      var $obj = $("#wb_Image2");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Image2', 'animate-fade-in-down', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image2', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Image2').inViewPort(true))
-   {
-      $('#wb_Image2').addClass("in-viewport");
-   }
-   onScrollImage2();
-   $(window).scroll(function(event)
-   {
-      onScrollImage2();
-   });
-   function onScrollImage3()
-   {
-      var $obj = $("#wb_Image3");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(true))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('wb_Image3', 'animate-fade-in-up', 0, 1250);
-      }
-      else
-      if ($obj.hasClass("in-viewport") && !$obj.inViewPort(true))
-      {
-         $obj.removeClass("in-viewport");
-         AnimateCss('wb_Image3', 'animate-fade-out', 0, 0);
-      }
-   }
-   if (!$('#wb_Image3').inViewPort(true))
-   {
-      $('#wb_Image3').addClass("in-viewport");
-   }
-   onScrollImage3();
-   $(window).scroll(function(event)
-   {
-      onScrollImage3();
    });
    $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
    $("a[rel^='PhotoGallery1']").fancybox({});
